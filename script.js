@@ -1,6 +1,6 @@
 let count = 0;
 let numRight = 0;
-let numQuestions;
+let numQuestions = 4;
 let correct;
 
 
@@ -20,7 +20,7 @@ let doTheGame = function(){
         createQuestion("Who drives the struggle bus?","Me","you","Mr. Law","Most definitely me.","Most definitely me.");
     }else {
             let question = document.getElementById("question");
-            question.innerText = "You got" + numRight + " correct out of " + numQuestions;
+            question.innerText = "You got " + numRight + " correct out of " + numQuestions;
             document.getElementById("BUTTON").innerHTML = " ";
         }
 
